@@ -47,17 +47,19 @@ git submodule update --init --recursive
 
 ### pico-tool
 
+Directory name is `picotool-repo` to avoid name collision with zsh auto_cd.
+
 CLI tool for working with RP2040/RP2350 binaries.
 
 `pico-sdk>2.0.0` uses `picotool` to do the ELF to UF2 conversion.
 
 ```bash
-cd picotool  # ->pico-setup-fedora/picotool/
+cd picotool-repo  # ->pico-setup-fedora/picotool-repo/
 mkdir build
-cd build  # ->pico-setup-fedora/picotool/build/
+cd build  # ->pico-setup-fedora/picotool-repo/build/
 cmake ..
 make
-cd ..  # ->pico-setup-fedora/picotool/
+cd ..  # ->pico-setup-fedora/picotool-repo/
 
 sudo cp udev/99-picotool.rules /etc/udev/rulse.d
 cd .. # ->pico-setup-fedora/
