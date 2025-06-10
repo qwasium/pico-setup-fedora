@@ -25,6 +25,13 @@ Check which one you're using; compilation flags are different!
 - [Official setup script](https://github.com/raspberrypi/pico-setup/blob/master/pico_setup.sh)
 - [Raspberry Pi Pico-series C/C++ SDK](https://rptl.io/pico-c-sdk)
 
+## About git submodules
+
+Directory name for `picotool` repo is `pico-tool` to avoid name collision with zsh auto_cd.
+
+`picotool` and `pico-sdk` is on `develop` branch because the fix for picotool discovery is still not in the `master` branch.
+
+
 ## Setup
 
 Install dependencies.
@@ -61,7 +68,7 @@ cmake ..
 make
 cd ..  # ->pico-setup-fedora/picotool-repo/
 
-sudo cp udev/99-picotool.rules /etc/udev/rulse.d
+sudo cp udev/99-picotool.rules /etc/udev/rules.d
 cd .. # ->pico-setup-fedora/
 ```
 
