@@ -56,7 +56,7 @@ sudo dnf install arm-none-eabi-gcc-cs arm-none-eabi-gcc-cs-c++
 sudo dnf install gcc-arm-linux-gnu gcc-c++-arm-linux-gnu
 ```
 
-### Direct download
+#### Direct download
 
 Downloading the GNU ARM toolchain directly from the official arm webpage and adding it to `$PATH` will also work.
 
